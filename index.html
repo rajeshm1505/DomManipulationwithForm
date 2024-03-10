@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="Stylesheet" href="style.css" >
+    </head>
+<body>
+  
+  <div class="main-container">
+  
+    <form id ="form">
+        <h1 id="title"> Dom Manipulation with Form <p id="description"> This a sample DOM Manipulation form with CSS,HTML and bootstrap </p></h1>
+      
+        <div class="form-group">
+
+          <label for="firstname"> FirstName</label>
+          <input id ="first-name" placeholder="Enter your First name" type="text" size="40px" required/>
+          <label for="last-name"> LastName</label>
+          <input id ="last-name"  placeholder="Enter your Last name"  type="text" size="40px" required/>
+          <br>
+
+          <label for="address" >Address</label>
+          <textarea id="address" placeholder="Enter your address" required></textarea><br>
+
+          <label for="pincode" > Pincode</label>
+          <input id = "pincode"  placeholder="Enter your pincode"  type="text"  size="40px" required/><br>
+
+          <label for="gender" >Gender</label>
+          <input type="radio" id="gender1" name="gender" value="Male">
+          <label for="Male">Male</label>
+          <input type="radio" id="gender2" name="gender" value="Female"> 
+          <label for="Female">Female</label>
+          <input type="radio" id="gender3" name="gender" value="Others">
+          <label for="Others">Others</label>
+          <br>
+        
+          <label for="food">Choice of Food <p> (Choose 2 options)</p></label>
+          
+          <input type="checkbox"  id="food1" name="food" value="Pizza">
+          <label for="Pizza"  >Pizza</label>
+          <input type="checkbox"  id="food2" name="food" value="Kabab">
+          <label for="Kabab"  >Kabab</label>
+          <input type="checkbox"  id="food3" name="food" value="fish">
+          <label for="fish"  >fish</label>
+          <input type="checkbox"  id="food4" name="food" value="Sandwich">
+          <label for="Sandwich"  >Sandwich</label>
+          <input type="checkbox"  id="food5" name="food" value="Donnet">
+          <label for="Donnet"  >Donnet</label>
+          <br>
+
+          <label for="State"> State</label>  
+          <input id = "State"  placeholder="Enter your State"  type="text" size="40px" required/>
+          <br>
+          
+          <label for="Country"> Country</label>
+          <input id = "Country"  placeholder="Enter your Country"  type="text" size="40px" required/>
+          <br> 
+       
+          <button type="submit" id="submit" class="btn btn-primary" >submit</button>
+    
+      </div>
+      </form>
+      <div>
+        <table class="table" id = "display-table">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>Gender</th>
+              <th>Food</th>
+              <th>State</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody id ="tbody"></tbody>
+          
+        </table>
+       </div>
+      </div>
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
+ 
+
+ 
+
